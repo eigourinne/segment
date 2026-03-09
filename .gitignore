@@ -1,5 +1,5 @@
-.pt
-.png
-.txt
-.jpg
-.csv
+*.pt
+*.png
+*.txt
+*.jpg
+*.csv
