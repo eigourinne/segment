@@ -8,29 +8,6 @@
 
 - email:[onigami@qq.com]/[rinneeigou@gmail.com]
 
-> genshin impact NB!
-> arknights NB!
-> honkai impact 3 NB!
-> honkai impact 2 NB!
-> honkai: star rail NB!
-> zenless zero zone NB!
-> arknights:endfield NB!
-> blue archive NB!
-> wuthering waves NB!
-> three kindoms kill NB!
-> bang dream! NB!
-> d4dj NB!
-> revue starlight NB!
-> maj_soul NB!
-> masterduel NB!
-> terraria NB!
-> minecraft NB!
-> slay the spire NB!
-> slay the spire 2 NB!
-> atcoder NB!
-> nowcoder NB!
-> codeforces NB!
-
 ## architecture
 
 - to_yolo.py
@@ -65,6 +42,32 @@
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⡏⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+## surprise
+
+- genshin impact NB!
+- arknights NB!
+- honkai impact 3 NB!
+- honkai impact 2 NB!
+- honkai: star rail NB!
+- zenless zero zone NB!
+- arknights:endfield NB!
+- azur lane NB!
+- blue archive NB!
+- wuthering waves NB!
+- three kindoms kill NB!
+- bang dream! NB!
+- d4dj NB!
+- revue starlight NB!
+- maj_soul NB!
+- masterduel NB!
+- terraria NB!
+- minecraft NB!
+- slay the spire NB!
+- slay the spire 2 NB!
+- atcoder NB!
+- nowcoder NB!
+- codeforces NB!
 
 Copyright (C)
 
