@@ -1,5 +1,7 @@
 # 基于yolo的医学图像分割系统
 
+thanks to ultralytics, kaggle
+
 made by maou
 
 email:[onigami@qq.com]/[rinneeigou@gmail.com]
