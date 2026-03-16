@@ -1,10 +1,35 @@
-# 基于yolo的医学图像分割系统
+# yolo-based segment system for medical
 
-- thanks to ultralytics, kaggle
+> 基于yolo的医学图像分割系统
+
+- thanks to ultralytics, kaggle, streamlit
 
 - made by maou
 
 - email:[onigami@qq.com]/[rinneeigou@gmail.com]
+
+> genshin impact NB!
+> arknights NB!
+> honkai impact 3 NB!
+> honkai impact 2 NB!
+> honkai: star rail NB!
+> zenless zero zone NB!
+> arknights:endfield NB!
+> blue archive NB!
+> wuthering waves NB!
+> three kindoms kill NB!
+> bang dream! NB!
+> d4dj NB!
+> revue starlight NB!
+> maj_soul NB!
+> masterduel NB!
+> terraria NB!
+> minecraft NB!
+> slay the spire NB!
+> slay the spire 2 NB!
+> atcoder NB!
+> nowcoder NB!
+> codeforces NB!
 
 ## architecture
 
