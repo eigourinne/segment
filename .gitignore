@@ -1,3 +1,4 @@
 /data-seg
 /runs
-/yolo
+/*.png
+/*.jpg
