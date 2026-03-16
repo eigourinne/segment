@@ -2,7 +2,7 @@
 
 made by maou
 
-email:[onigami@qq.com]/[rinneeigou@gmail]
+email:[onigami@qq.com]/[rinneeigou@gmail.com]
 
 ## architecture
 
