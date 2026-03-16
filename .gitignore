@@ -1,4 +1,5 @@
-/data-seg
-/runs
-/*.png
-/*.jpg
+data-seg/
+runs/
+*.png
+*.jpg
+*.csv
