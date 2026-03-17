@@ -251,7 +251,7 @@ def main_app():
             with cols[idx % 4]:
                 # 转换为PIL Image显示
                 image = Image.open(img_file)
-                st.image(image, caption=img_file.name, use_column_width=True)
+                st.image(image, caption=img_file.name, width=400)
                 st.caption(f"{idx+1}. {img_file.name}")
         
         # 当点击处理按钮时
@@ -308,12 +308,12 @@ def main_app():
                 
                 with col1:
                     st.markdown("**原图**")
-                    st.image(result_info["original"], use_column_width=True, clamp=True)
+                    st.image(result_info["original"], width=400, clamp=True)
                 
                 with col2:
                     detection_status = "✅ 检测到伤口" if result_info["has_detection"] else "⚠️ 未检测到伤口"
                     st.markdown(f"**分割结果** ({detection_status})")
-                    st.image(result_info["result"], use_column_width=True, clamp=True)
+                    st.image(result_info["result"], width=400, clamp=True)
                 
                 # 显示检测参数与详情
                 st.markdown("**🔍 检测详情**")
