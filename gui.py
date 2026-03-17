@@ -34,7 +34,7 @@ if 'conf_threshold' not in st.session_state:
 def auto_load_model():
     """自动查找并加载模型，参考自 test.py 的 load_model_auto 函数"""
     possible_paths = [
-        "yolo/segment/weights/best.pt",
+        "runs/segment/train/weights/best.pt",
         "./best.pt",
         "best.pt"
     ]
