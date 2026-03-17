@@ -48,7 +48,7 @@ class WoundSegmentationGUI:
         main_frame.columnconfigure(1, weight=1)
         
         # 标题
-        title_label = ttk.Label(main_frame, text="YOLOv11 伤口分割检测系统", 
+        title_label = ttk.Label(main_frame, text="YOLOv26 伤口分割检测系统", 
                                 font=("Microsoft YaHei", 16, "bold"))
         title_label.grid(row=0, column=0, columnspan=3, pady=(0, 20))
         
