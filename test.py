@@ -131,7 +131,7 @@ class WoundSegmentationGUI:
     def load_model_auto(self):
         """自动查找并加载模型"""
         possible_paths = [
-            "yolo/segment/weights/best.pt",
+            "runs/segment/train/weights/best.pt",
             "./best.pt"
         ]
         
