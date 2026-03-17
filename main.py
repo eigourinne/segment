@@ -67,7 +67,7 @@ def main():
             imgsz=config["imgsz"],
             batch=config["batch"],
             device=config["device"],
-            patience=10,      # 早停耐心值
+            patience=20,      # 早停耐心值
             save=True,        # 保存检查点
             save_period=10,   # 每10轮保存一次
             workers=4,        # 数据加载线程数
