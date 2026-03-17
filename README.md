@@ -55,7 +55,7 @@
 - azur lane NB!
 - blue archive NB!
 - wuthering waves NB!
-- three kindoms kill NB!
+- legands of the three kindoms NB!
 - bang dream! NB!
 - d4dj NB!
 - revue starlight NB!
