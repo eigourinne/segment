@@ -1,7 +1,6 @@
 from ultralytics import YOLO
 import os
 import torch
-from datetime import datetime
 
 def main():
     """主训练函数"""
