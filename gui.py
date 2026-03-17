@@ -11,7 +11,7 @@ import time
 
 # ------------------ 页面配置 ------------------
 st.set_page_config(
-    page_title="YOLOv11 伤口分割系统",
+    page_title="YOLOv26 伤口分割系统",
     page_icon="🩹",
     layout="wide"
 )
@@ -96,7 +96,7 @@ def predict_and_plot(img_path, conf_threshold=0.25):
 
 # ------------------ 登录页面 ------------------
 def login_page():
-    st.title("🔐 YOLOv11 伤口分割系统 - 管理员登录")
+    st.title("🔐 YOLOv26 伤口分割系统 - 管理员登录")
     
     with st.form("login_form"):
         username = st.text_input("用户名")
@@ -229,7 +229,7 @@ def main_app():
     )
     
     # 主界面
-    st.title("🩹 YOLOv11 伤口分割可视化系统")
+    st.title("🩹 YOLOv26 伤口分割可视化系统")
     
     # 状态显示
     col_status1, col_status2 = st.columns(2)

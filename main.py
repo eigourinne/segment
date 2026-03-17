@@ -6,7 +6,7 @@ def main():
     """主训练函数"""
     # 配置训练参数
     config = {
-        "model": "yolo11n-seg.pt",  # 分割模型
+        "model": "yolo26n-seg.pt",  # 分割模型
         "data_yaml": "data.yaml",   # 数据配置文件
         "epochs": 100,              # 训练轮数
         "imgsz": 512,               # 图片大小
@@ -14,8 +14,11 @@ def main():
         "device": "0",              # 设备: 0表示第一个GPU
     }
     
+    # 开启tensorboard
+    # yolo settings tensorboard=True
+
     print("=" * 60)
-    print("YOLOv11 分割模型训练")
+    print("YOLOv26 分割模型训练")
     print("=" * 60)
     
     # 1. 检查数据配置文件
@@ -47,8 +50,6 @@ def main():
     print("-" * 60)
     print("TensorBoard: 启用")
     print("TensorBoard日志将自动生成")
-    print("训练完成后，使用以下命令启动TensorBoard：")
-    print("  tensorboard --logdir yolo/segment")
     print("=" * 60)
     
     # 4. 加载模型
@@ -71,8 +72,6 @@ def main():
             save_period=10,   # 每10轮保存一次
             workers=4,        # 数据加载线程数
             exist_ok=True,    # 允许覆盖
-            project='yolo',    # 项目名称
-            name='segment',    # 实验名称
             
             # TensorBoard相关参数
             plots=True      # 生成训练图
@@ -104,11 +103,8 @@ def main():
         print("训练流程完成!")
         print("\nTensorBoard使用指南:")
         print("1. 在终端中运行以下命令启动TensorBoard:")
-        print("   tensorboard --logdir yolo/segment")
-        print("2. 然后在浏览器中访问: http://localhost:6006")
-        print("3. 如果6006端口被占用，可以指定其他端口:")
-        print("   tensorboard --logdir yolo/segment --port 6007")
-        
+        print("   tensorboard --logdir path/to/dialog")
+
         # 自动检测并显示最新的训练目录
         runs_dir = "runs"
         if os.path.exists(runs_dir):
