@@ -3,3 +3,6 @@ runs/
 *.png
 *.jpg
 *.csv
+*.txt
+images/
+masks/
