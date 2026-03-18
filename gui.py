@@ -11,7 +11,7 @@ import time
 
 # ------------------ 页面配置 ------------------
 st.set_page_config(
-    page_title="YOLOv26 伤口分割系统",
+    page_title="YOLOv26 皮肤癌图像分割系统",
     page_icon="🩹",
     layout="wide"
 )
@@ -96,7 +96,7 @@ def predict_and_plot(img_path, conf_threshold=0.25):
 
 # ------------------ 登录页面 ------------------
 def login_page():
-    st.title("🔐 YOLOv26 伤口分割系统 - 管理员登录")
+    st.title("🔐 YOLOv26 皮肤癌分割系统 - 管理员登录")
     
     with st.form("login_form"):
         username = st.text_input("用户名")
@@ -161,7 +161,7 @@ def main_app():
     
     if upload_option == "单张图片":
         uploaded_file = st.sidebar.file_uploader(
-            "选择一张伤口图片",
+            "选择一张皮肤癌图片",
             type=['jpg', 'jpeg', 'png', 'bmp', 'tif', 'tiff'],
             key="single_upload"
         )
@@ -171,7 +171,7 @@ def main_app():
     
     elif upload_option == "多张图片":
         uploaded_files = st.sidebar.file_uploader(
-            "选择多张伤口图片",
+            "选择多张皮肤癌图片",
             type=['jpg', 'jpeg', 'png', 'bmp', 'tif', 'tiff'],
             accept_multiple_files=True,
             key="multi_upload"
@@ -229,7 +229,7 @@ def main_app():
     )
     
     # 主界面
-    st.title("🩹 YOLOv26 伤口分割可视化系统")
+    st.title("🩹 YOLOv26 皮肤癌分割可视化系统")
     
     # 状态显示
     col_status1, col_status2 = st.columns(2)
@@ -311,7 +311,7 @@ def main_app():
                     st.image(result_info["original"], width=400, clamp=True)
                 
                 with col2:
-                    detection_status = "✅ 检测到伤口" if result_info["has_detection"] else "⚠️ 未检测到伤口"
+                    detection_status = "✅ 检测到皮肤癌" if result_info["has_detection"] else "⚠️ 未检测到皮肤癌"
                     st.markdown(f"**分割结果** ({detection_status})")
                     st.image(result_info["result"], width=400, clamp=True)
                 
@@ -328,7 +328,7 @@ def main_app():
                         })
                     st.table(detections_df)
                 else:
-                    st.info("在此图片中未识别到伤口目标。")
+                    st.info("在此图片中未识别到皮肤癌目标。")
                 
                 # 提供下载结果图片的选项
                 col_dl1, col_dl2 = st.columns(2)

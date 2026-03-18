@@ -19,11 +19,11 @@
 
 ## architecture
 
-- to_yolo.py -> just used to convert (images, masks) to yolo's shape
-- data.yaml -> adjust it as what your need
-- main.py -> dont't forget to download model(in my ultralytics provided by archlinux, it just offer v8's, so I mannally donwload v11n-seg for this project, if you wanna solve objection-problem, use v11n/v26n etc.)
-- test.py -> simple tkinter interface
-- gui.py -> use streamlit to build the back end, then display it on the front end
+- to_yolo.py
+- data.yaml
+- train.py
+- test.py
+- gui.py
 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿

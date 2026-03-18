@@ -1,7 +1,7 @@
-path: data-seg
-train: images/train
-val: images/val
-test: images/test
-nc: 1
-names:
-  0: wound
+# YOLO 数据集配置文件 - 自动生成
+train: data-seg/images/train
+val: data-seg/images/val
+test: data-seg/images/test
+
+nc: 7  # 类别数量
+names: ['MEL', 'NV', 'BCC', 'AKIEC', 'BKL', 'DF', 'VASC']

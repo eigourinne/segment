@@ -20,7 +20,7 @@ import queue
 class WoundSegmentationGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("伤口分割检测系统")
+        self.root.title("皮肤癌图像分割检测系统")
         self.root.geometry("1000x700")
         
         # 模型变量
@@ -48,7 +48,7 @@ class WoundSegmentationGUI:
         main_frame.columnconfigure(1, weight=1)
         
         # 标题
-        title_label = ttk.Label(main_frame, text="YOLOv26 伤口分割检测系统", 
+        title_label = ttk.Label(main_frame, text="YOLOv26 皮肤癌分割检测系统", 
                                 font=("Microsoft YaHei", 16, "bold"))
         title_label.grid(row=0, column=0, columnspan=3, pady=(0, 20))
         
@@ -299,7 +299,7 @@ class WoundSegmentationGUI:
                     
                     plt.subplot(1, 2, 2)
                     plt.imshow(result_img)
-                    detection_status = "(检测到伤口)" if has_detection else "(未检测到伤口)"
+                    detection_status = "(检测到皮肤癌)" if has_detection else "(未检测到皮肤癌)"
                     plt.title(f'分割结果 {detection_status}', fontproperties='Microsoft YaHei')
                     plt.axis('off')
                     
@@ -367,7 +367,7 @@ class WoundSegmentationGUI:
         label.pack(padx=10, pady=10)
         
         # 显示检测状态
-        status = "检测到伤口" if has_detection else "未检测到伤口"
+        status = "检测到皮肤癌" if has_detection else "未检测到皮肤癌"
         status_label = ttk.Label(result_window, text=f"状态: {status}", 
                                 font=("Microsoft YaHei", 12))
         status_label.pack(pady=(0, 10))
