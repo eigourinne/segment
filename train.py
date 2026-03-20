@@ -7,15 +7,15 @@ if __name__ == "__main__":
     # 开始训练
     train = model.train(
         data="data.yaml",
-        epochs=100,
+        epochs=300,           # 100太少了
         imgsz=640,
         batch=-1,
         device="0",
         patience=20,
         visualize=True,
         verbose=True,
-        optimizer='AdamW',
-        lr0=1e-4,
+        optimizer='SGD',      # adamw是错的
+        lr0=1e-3,             # sgd是对的
         momentum=0.937,
         weight_decay=0.0005,
         warmup_epochs=3.0,
@@ -29,8 +29,8 @@ if __name__ == "__main__":
         mask_ratio=4,
         dropout=0.0,
         val=True,
-        profile=True,
-        compile=True,
+        profile=True,         # onnx + tensorRT
+        compile=True,         # python-triton，编译期优化确实快
         save=True,
         save_period=10,
         workers=4,
