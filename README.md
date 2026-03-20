@@ -10,12 +10,13 @@
 
 ## requirement
 
-- cuda(if not, it may happen *2000 years later*)
-- nccl(if you use package manager, it will be automatively download while installing cuda or torch-cuda)
-- pytorch-cuda(pytorch cpu is really slow)
-- torchvivion-cuda(same reason)
-- streamlit(usually gradio is more popular, but in archlinux's aur, gradio is facing cycle-requirement problems)
-- customs-tkinter(test.py require it)
+- (cuda)
+- (nccl)
+- python-ultralytics
+- pytorch-cuda(pytorch)
+- streamlit(gradio)
+- python-tkinter
+- (tensorRT)
 
 ## architecture
 
