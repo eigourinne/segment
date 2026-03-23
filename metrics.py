@@ -242,8 +242,6 @@ if __name__ == "__main__":
     print("=" * 60)
     
     # 根据 train.py 中的注释设置模型路径
-    # modelbad -> runs/segment/train/weights/adamW-best.pt
-    # modelgood -> runs/segment/train/weights/best.pt
     model_path_adamw = "runs/segment/train/weights/adamW-best.pt"
     model_path_sgd = "runs/segment/train/weights/best.pt"
     

@@ -20,7 +20,7 @@ import queue
 class WoundSegmentationGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("医学图像分割检测系统")
+        self.root.title("医学图像分割系统")
         self.root.geometry("1000x700")
         
         # 模型变量

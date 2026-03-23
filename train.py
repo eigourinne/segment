@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 if __name__ == "__main__":
-    # 实例分割任务
+    # 医学实例分割任务
     model = YOLO("yolo26n-seg.pt")
 
     # 开始训练
