@@ -56,7 +56,7 @@
 
 ## etc
 
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/8f14b6c6-b775-47d9-a603-b5bfaec388b2)
 
 - genshin impact NB!
 - arknights NB!
