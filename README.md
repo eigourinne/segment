@@ -56,7 +56,7 @@
 
 ## etc
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 - genshin impact NB!
 - arknights NB!
