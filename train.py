@@ -2,20 +2,20 @@ from ultralytics import YOLO
 
 if __name__ == "__main__":
     # 医学实例分割任务
-    model = YOLO("yolo26n-seg.pt")
+    model = YOLO("yolo26s-seg.pt")
 
     # 开始训练
     train = model.train(
         data="data.yaml",
         epochs=300,           # SGD至少要300轮以上
         imgsz=640,
-        batch=-1,             # 自动60%的GPU使用率
+        batch=0.5,            # 自动50%的GPU使用率
         device="0",
         patience=20,
         visualize=True,
         verbose=True,
-        optimizer='SGD',      # AdamW是错的，过拟合严重
-        lr0=1e-3,             # SGD是对的，大道至简
+        optimizer='MuSGD',    # AdamW是错的，过拟合严重
+        lr0=1e-3,             # SGD是对的，大道至简，MuSGD更前沿
         momentum=0.937,
         weight_decay=0.0005,  # SGD尽可能需要小的预热
         warmup_epochs=3.0,    # 同上

@@ -311,7 +311,7 @@ def main_app():
                     st.image(result_info["original"], width=400, clamp=True)
                 
                 with col2:
-                    detection_status = "✅ 检测到医学" if result_info["has_detection"] else "⚠️ 未检测到医学"
+                    detection_status = "✅ 检测到病变" if result_info["has_detection"] else "⚠️ 未检测到病变"
                     st.markdown(f"**分割结果** ({detection_status})")
                     st.image(result_info["result"], width=400, clamp=True)
                 
