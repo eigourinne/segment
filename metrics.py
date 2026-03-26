@@ -242,8 +242,8 @@ if __name__ == "__main__":
     print("=" * 60)
     
     # 根据 train.py 中的注释设置模型路径
-    model_path_adamw = "runs/segment/train/weights/adamW-best.pt"
-    model_path_sgd = "runs/segment/train/weights/best.pt"
+    model_path_adamw = "AdamW-best.pt"
+    model_path_sgd = "MuSGD-best.pt"
     
     # 评估AdamW模型
     print("评估 AdamW 优化器模型:")
