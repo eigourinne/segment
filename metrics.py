@@ -92,7 +92,6 @@ def evaluate_model(model_path, data_cfg='data.yaml'):
     # 但为了计算 Dice, IoU, HD95, RVE 等，通常需要遍历数据集，对每张图片进行预测，
     # 并将预测掩膜与真实掩膜进行比较。以下为扩展计算这些指标的伪代码思路：
     
-    """
     # 扩展计算思路（需要实际数据集）：
     all_dice = []
     all_iou = []
@@ -129,7 +128,6 @@ def evaluate_model(model_path, data_cfg='data.yaml'):
     metrics['IoU'] = np.mean(all_iou) if all_iou else 0
     metrics['HD95'] = np.mean(all_hd95) if all_hd95 else 0
     metrics['RVE'] = np.mean(all_rve) if all_rve else 0
-    """
     
     # 由于上述完整计算需要访问数据集和更复杂的循环，且可能耗时，
     # 此处我们主要基于 results 中已有指标，并打印计算核心指标的框架。
@@ -157,7 +155,7 @@ def evaluate_model(model_path, data_cfg='data.yaml'):
     
     return metrics
 
-def plot_comparison(metrics_adamw, metrics_sgd):
+def plot_comparison(metrics_adamw, metrics_musgd):
     """
     绘制两个模型性能指标的对比图。
     """
@@ -172,15 +170,15 @@ def plot_comparison(metrics_adamw, metrics_sgd):
         metrics_adamw.get('HD95', 0),
         metrics_adamw.get('RVE', 0)
     ]
-    sgd_values = [
-        metrics_sgd.get('mAP50', 0),
-        metrics_sgd.get('mAP50-95', 0),
-        metrics_sgd.get('precision', 0),
-        metrics_sgd.get('recall', 0),
-        metrics_sgd.get('Dice', 0),
-        metrics_sgd.get('IoU', 0),
-        metrics_sgd.get('HD95', 0),
-        metrics_sgd.get('RVE', 0)
+    musgd_values = [
+        metrics_musgd.get('mAP50', 0),
+        metrics_musgd.get('mAP50-95', 0),
+        metrics_musgd.get('precision', 0),
+        metrics_musgd.get('recall', 0),
+        metrics_musgd.get('Dice', 0),
+        metrics_musgd.get('IoU', 0),
+        metrics_musgd.get('HD95', 0),
+        metrics_musgd.get('RVE', 0)
     ]
     
     x = np.arange(len(labels))  # 标签位置
@@ -192,15 +190,15 @@ def plot_comparison(metrics_adamw, metrics_sgd):
     ax_table.axis('tight')
     ax_table.axis('off')
     table_data = [
-        ['指标', 'AdamW模型', 'SGD模型', '差值 (SGD - AdamW)'],
-        ['mAP50', f"{metrics_adamw.get('mAP50', 0):.4f}", f"{metrics_sgd.get('mAP50', 0):.4f}", f"{metrics_sgd.get('mAP50', 0) - metrics_adamw.get('mAP50', 0):.4f}"],
-        ['mAP50-95', f"{metrics_adamw.get('mAP50-95', 0):.4f}", f"{metrics_sgd.get('mAP50-95', 0):.4f}", f"{metrics_sgd.get('mAP50-95', 0) - metrics_adamw.get('mAP50-95', 0):.4f}"],
-        ['Precision', f"{metrics_adamw.get('precision', 0):.4f}", f"{metrics_sgd.get('precision', 0):.4f}", f"{metrics_sgd.get('precision', 0) - metrics_adamw.get('precision', 0):.4f}"],
-        ['Recall', f"{metrics_adamw.get('recall', 0):.4f}", f"{metrics_sgd.get('recall', 0):.4f}", f"{metrics_sgd.get('recall', 0) - metrics_adamw.get('recall', 0):.4f}"],
-        ['Dice', f"{metrics_adamw.get('Dice', 0):.4f}", f"{metrics_sgd.get('Dice', 0):.4f}", f"{metrics_sgd.get('Dice', 0) - metrics_adamw.get('Dice', 0):.4f}"],
-        ['IoU', f"{metrics_adamw.get('IoU', 0):.4f}", f"{metrics_sgd.get('IoU', 0):.4f}", f"{metrics_sgd.get('IoU', 0) - metrics_adamw.get('IoU', 0):.4f}"],
-        ['HD95', f"{metrics_adamw.get('HD95', 0):.2f}", f"{metrics_sgd.get('HD95', 0):.2f}", f"{metrics_sgd.get('HD95', 0) - metrics_adamw.get('HD95', 0):.2f}"],
-        ['RVE', f"{metrics_adamw.get('RVE', 0):.4f}", f"{metrics_sgd.get('RVE', 0):.4f}", f"{metrics_sgd.get('RVE', 0) - metrics_adamw.get('RVE', 0):.4f}"]
+        ['指标', 'AdamW模型', 'MuSGD模型', '差值 (MuSGD - AdamW)'],
+        ['mAP50', f"{metrics_adamw.get('mAP50', 0):.4f}", f"{metrics_musgd.get('mAP50', 0):.4f}", f"{metrics_musgd.get('mAP50', 0) - metrics_adamw.get('mAP50', 0):.4f}"],
+        ['mAP50-95', f"{metrics_adamw.get('mAP50-95', 0):.4f}", f"{metrics_musgd.get('mAP50-95', 0):.4f}", f"{metrics_musgd.get('mAP50-95', 0) - metrics_adamw.get('mAP50-95', 0):.4f}"],
+        ['Precision', f"{metrics_adamw.get('precision', 0):.4f}", f"{metrics_musgd.get('precision', 0):.4f}", f"{metrics_musgd.get('precision', 0) - metrics_adamw.get('precision', 0):.4f}"],
+        ['Recall', f"{metrics_adamw.get('recall', 0):.4f}", f"{metrics_musgd.get('recall', 0):.4f}", f"{metrics_musgd.get('recall', 0) - metrics_adamw.get('recall', 0):.4f}"],
+        ['Dice', f"{metrics_adamw.get('Dice', 0):.4f}", f"{metrics_musgd.get('Dice', 0):.4f}", f"{metrics_musgd.get('Dice', 0) - metrics_adamw.get('Dice', 0):.4f}"],
+        ['IoU', f"{metrics_adamw.get('IoU', 0):.4f}", f"{metrics_musgd.get('IoU', 0):.4f}", f"{metrics_musgd.get('IoU', 0) - metrics_adamw.get('IoU', 0):.4f}"],
+        ['HD95', f"{metrics_adamw.get('HD95', 0):.2f}", f"{metrics_musgd.get('HD95', 0):.2f}", f"{metrics_musgd.get('HD95', 0) - metrics_adamw.get('HD95', 0):.2f}"],
+        ['RVE', f"{metrics_adamw.get('RVE', 0):.4f}", f"{metrics_musgd.get('RVE', 0):.4f}", f"{metrics_musgd.get('RVE', 0) - metrics_adamw.get('RVE', 0):.4f}"]
     ]
     table = ax_table.table(cellText=table_data, loc='center', cellLoc='center', colWidths=[0.25, 0.25, 0.25, 0.25])
     table.auto_set_font_size(False)
@@ -210,7 +208,7 @@ def plot_comparison(metrics_adamw, metrics_sgd):
     
     # 子图2：柱状图对比
     bars1 = ax_bar.bar(x - width/2, adamw_values, width, label='AdamW', color='salmon')
-    bars2 = ax_bar.bar(x + width/2, sgd_values, width, label='SGD', color='lightblue')
+    bars2 = ax_bar.bar(x + width/2, musgd_values, width, label='MuSGD', color='lightblue')
     
     ax_bar.set_xlabel('评估指标', fontsize=12)
     ax_bar.set_ylabel('指标值', fontsize=12)
@@ -238,7 +236,7 @@ def plot_comparison(metrics_adamw, metrics_sgd):
     print("对比图已保存为 'optimizer_comparison.png'")
 
 if __name__ == "__main__":
-    print("开始评估并对比 AdamW 与 SGD 优化器训练的模型性能...")
+    print("开始评估并对比 AdamW 与 MuSGD 优化器训练的模型性能...")
     print("=" * 60)
     
     # 根据 train.py 中的注释设置模型路径
@@ -249,12 +247,12 @@ if __name__ == "__main__":
     print("评估 AdamW 优化器模型:")
     metrics_adamw = evaluate_model(model_path_adamw, data_cfg='data.yaml')
     
-    # 评估SGD模型
-    print("\n评估 SGD 优化器模型:")
-    metrics_sgd = evaluate_model(model_path_sgd, data_cfg='data.yaml')
+    # 评估MuSGD模型
+    print("\n评估 MuSGD 优化器模型:")
+    metrics_musgd = evaluate_model(model_path_sgd, data_cfg='data.yaml')
     
     # 绘制对比图
     print("\n生成性能对比图...")
-    plot_comparison(metrics_adamw, metrics_sgd)
+    plot_comparison(metrics_adamw, metrics_musgd)
     
     print("\n评估与对比完成。")

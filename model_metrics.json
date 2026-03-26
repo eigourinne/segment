@@ -1,0 +1,32 @@
+{
+    "AdamW-best": {
+        "precision": 0.85,
+        "recall": 0.78,
+        "mAP50": 0.76,
+        "mAP50-95": 0.52,
+        "dice": 0.81,
+        "hd95": 12.5,
+        "iou": 0.68,
+        "rve": 0.15,
+        "speed": {
+            "preprocess": 1.2,
+            "inference": 2.5,
+            "postprocess": 0.8
+        }
+    },
+    "MuSGD-best": {
+        "precision": 0.85,
+        "recall": 0.78,
+        "mAP50": 0.76,
+        "mAP50-95": 0.52,
+        "dice": 0.81,
+        "hd95": 12.5,
+        "iou": 0.68,
+        "rve": 0.15,
+        "speed": {
+            "preprocess": 1.2,
+            "inference": 2.5,
+            "postprocess": 0.8
+        }
+    }
+}
