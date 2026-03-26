@@ -18,6 +18,10 @@
 - python-tkinter
 - (tensorRT)
 
+## resource
+
+- data:[https://www.kaggle.com/datasets/volodymyrpivoshenko/skin-cancer-lesions-segmentation]
+
 ## architecture
 
 - to_yolo.py
