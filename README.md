@@ -20,7 +20,7 @@
 
 ## resource
 
-- data:[https://www.kaggle.com/datasets/volodymyrpivoshenko/skin-cancer-lesions-segmentation]
+- [data]([https://www.kaggle.com/datasets/volodymyrpivoshenko/skin-cancer-lesions-segmentation)
 
 ## architecture
 
