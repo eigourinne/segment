@@ -17,7 +17,7 @@ from PIL import Image, ImageTk
 import threading
 import queue
 
-class WoundSegmentationGUI:
+class LesionSegmentationGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("医学图像分割系统")
@@ -403,7 +403,7 @@ def main():
     except:
         pass
     
-    app = WoundSegmentationGUI(root)
+    app = LesionSegmentationGUI(root)
     root.mainloop()
 
 if __name__ == "__main__":
