@@ -4,5 +4,6 @@ runs/
 *.jpg
 *.csv
 *.txt
+*.pt
 images/
 masks/
