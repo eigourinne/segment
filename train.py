@@ -31,8 +31,8 @@ from ultralytics import YOLO
 """
 
 if __name__ == "__main__":
-    # 医学实例分割任务
-    model = YOLO("yolo26s-seg.pt")
+    # 医学实例分割任务，使用ELA改进
+    model = YOLO("yolo26s-seg-ELA.pt")
 
     # 开始训练
     train = model.train(
