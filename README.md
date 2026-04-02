@@ -2,21 +2,23 @@
 
 > 基于yolo的医学图像分割系统
 
-- thanks to ultralytics, kaggle, streamlit
+> thanks to `ultralytics`, `kaggle`, `streamlit`
 
 - made by maou
+
+- 2025.11
 
 - email:[onigami@qq.com]/[rinneeigou@gmail.com]
 
 ## requirement
 
-- (cuda)
-- (nccl)
-- python-ultralytics
-- pytorch-cuda(pytorch)
-- streamlit(gradio)
-- python-tkinter
-- (tensorRT)
+- `cuda`
+- `nccl`
+- `python-ultralytics`
+- `pytorch-cuda`(`pytorch`)
+- `streamlit`(`gradio`)
+- `python-tkinter`
+- `tensorRT`/`ncnn`
 
 ## resource
 
@@ -63,8 +65,7 @@
 
 - genshin impact NB!
 - arknights NB!
-- honkai impact 3 NB!
-- honkai impact 2 NB!
+- honkai impact NB!
 - honkai: star rail NB!
 - zenless zero zone NB!
 - arknights:endfield NB!
@@ -78,9 +79,3 @@
 - maj_soul NB!
 - masterduel NB!
 - terraria NB!
-- minecraft NB!
-- slay the spire NB!
-- slay the spire 2 NB!
-- atcoder NB!
-- nowcoder NB!
-- codeforces NB!
