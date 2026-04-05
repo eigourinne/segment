@@ -62,20 +62,3 @@
 ## etc
 
 ![image](https://github.com/user-attachments/assets/8f14b6c6-b775-47d9-a603-b5bfaec388b2)
-
-- genshin impact NB!
-- arknights NB!
-- honkai impact NB!
-- honkai: star rail NB!
-- zenless zero zone NB!
-- arknights:endfield NB!
-- azur lane NB!
-- blue archive NB!
-- wuthering waves NB!
-- legands of the three kindoms NB!
-- bang dream! NB!
-- d4dj NB!
-- revue starlight NB!
-- maj_soul NB!
-- masterduel NB!
-- terraria NB!
