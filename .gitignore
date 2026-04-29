@@ -1,10 +1,7 @@
-data-seg/
-runs/
-*.png
-*.jpg
-*.csv
-*.txt
 *.pt
-images/
-masks/
-gua/
+*.yaml
+*.txt
+data_seg
+yolo-seg
+baseline
+runs

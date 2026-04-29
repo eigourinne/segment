@@ -299,7 +299,7 @@ class LesionSegmentationGUI:
                     
                     plt.subplot(1, 2, 2)
                     plt.imshow(result_img)
-                    detection_status = "(检测到医学)" if has_detection else "(未检测到医学)"
+                    detection_status = "(检测病灶)" if has_detection else "(未检测到病灶)"
                     plt.title(f'分割结果 {detection_status}', fontproperties='Microsoft YaHei')
                     plt.axis('off')
                     
@@ -367,7 +367,7 @@ class LesionSegmentationGUI:
         label.pack(padx=10, pady=10)
         
         # 显示检测状态
-        status = "检测到医学" if has_detection else "未检测到医学"
+        status = "检测到病灶" if has_detection else "未检测到病灶"
         status_label = ttk.Label(result_window, text=f"状态: {status}", 
                                 font=("Microsoft YaHei", 12))
         status_label.pack(pady=(0, 10))

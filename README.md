@@ -18,7 +18,6 @@
 - `pytorch-cuda`(`pytorch`)
 - `streamlit`(`gradio`)
 - `python-tkinter`
-- `tensorRT`/`ncnn`
 
 ## resource
 
@@ -27,10 +26,11 @@
 ## architecture
 
 - `to_yolo.py`
-- `data.yaml`
 - `train.py`
 - `test.py`
 - `gui.py`
+- `val.py`
+- <!--`convert.py`-->
 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿
