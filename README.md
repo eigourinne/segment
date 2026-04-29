@@ -18,7 +18,6 @@
 - `pytorch-cuda`(`pytorch`)
 - `streamlit`(`gradio`)
 - `python-tkinter`
-- `tensorRT`/`ncnn`
 
 ## resource
 
@@ -31,6 +30,7 @@
 - `train.py`
 - `test.py`
 - `gui.py`
+- `val.py`
 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿
